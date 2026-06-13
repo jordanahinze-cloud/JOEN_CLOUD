@@ -80,7 +80,7 @@ function handleSeedDrop(seedId) {
     isSimulationRunning = false; 
     
     potStatus.textContent = `Aguardando Água: ${activeSeed.name}`;
-    potImgState.src = "assets/elements/vaso-vazio.png"; 
+    potImgState.src = "../../assets/elements/vaso-vazio.png"; 
     
     if (potVisualContainer) {
         potVisualContainer.classList.remove("murcha"); 
@@ -181,11 +181,11 @@ function startSimulation() {
         if (timeRemaining <= 0) {
             finishGrowth();
         } else if (percentDone >= 66) {
-            potImgState.src = "assets/elements/planta-grande.png";  
+            potImgState.src = "../../assets/elements/planta-grande.png";  
         } else if (percentDone >= 33) {
-            potImgState.src = "assets/elements/planta-media.png";   
+            potImgState.src = "../../assets/elements/planta-media.png";   
         } else if (percentDone >= 1) {
-            potImgState.src = "assets/elements/planta-pequena.png"; 
+            potImgState.src = "../../assets/elements/planta-pequena.png"; 
         }
     }, 1000);
 }
@@ -261,7 +261,7 @@ function resetPot() {
     timeRemaining = 0;
     
     potStatus.textContent = "Livre";
-    potImgState.src = "assets/elements/vaso-vazio.png";
+    potImgState.src = "../../assets/elements/vaso-vazio.png";
     timerDisplay.textContent = "--:--";
     if (scoreTempo) scoreTempo.textContent = "0";
     

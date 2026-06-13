@@ -44,19 +44,19 @@ let currentTime = 0;
 let timerInterval = null;
 
 const imgTerra = new Image();
-imgTerra.src = 'assets/elements/terra.png';
+imgTerra.src = '../../assets/elements/terra.png';
 
 const imgObstaculoPedra = new Image();
-imgObstaculoPedra.src = 'assets/elements/obstaculo-pedra.png'; 
+imgObstaculoPedra.src = '../../assets/elements/obstaculo-pedra.png'; 
 
 const imgObstaculoPraia = new Image();
-imgObstaculoPraia.src = 'assets/elements/obstaculo-praia.png'; 
+imgObstaculoPraia.src = '../../assets/elements/obstaculo-praia.png'; 
 
 const imgTratorDireita = new Image();
-imgTratorDireita.src = 'assets/elements/trator-direita.png';
+imgTratorDireita.src = '../../assets/elements/trator-direita.png';
 
 const imgTratorEsquerda = new Image();
-imgTratorEsquerda.src = 'assets/elements/trator-esquerda.png';
+imgTratorEsquerda.src = '../../assets/elements/trator-esquerda.png';
 
 let imagensCarregadas = 0;
 const totalImagens = 5;

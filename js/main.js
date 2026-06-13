@@ -4,28 +4,28 @@ const meusJogos = [
         desc: "Pilote um trator ecológico para recuperar áreas desmatadas em larga escala.",
         dificuldade: "Fácil",
         dificuldadeClasse: "difficulty-easy",
-        imagemUrl: "assets/images/trator.jpg"
+        imagemUrl: "../../assets/images/trator.jpg"
     },
     {
         titulo: "Coleta Seletiva",
         desc: "Separe embalagens e resíduos nas respectivas lixeiras.",
         dificuldade: "Médio",
         dificuldadeClasse: "difficulty-medium",
-        imagemUrl: "assets/images/coleta.jpg"
+        imagemUrl: "../../assets/images/coleta.jpg"
     },
     {
         titulo: "Mestre do Hectare",
         desc: "Calcule a distribuição perfeita de plantio para máxima eficiência agrícola.",
         dificuldade: "Difícil",
         dificuldadeClasse: "difficulty-hard",
-        imagemUrl: "assets/images/hectare.png"
+        imagemUrl: "../../assets/images/hectare.png"
     },
     {
         titulo: "Lab de Sementes",
         desc: "Plante e regue sementes de acordo com suas características.",
         dificuldade: "Médio",
         dificuldadeClasse: "difficulty-medium",
-        imagemUrl: "assets/images/sementes.png"
+        imagemUrl: "../../assets/images/sementes.png"
     }
 ];
 
