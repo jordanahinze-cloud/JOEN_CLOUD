@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@500;700;800&display=swap');
+
+:root {
+    --main-color: #0846a1;
+    --main-dark: #002255;
+    --green: #63f044;
+    --bg-white: #ffffff;
+    --bg-gray: #f8fafc;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --border: #cbd5e1;
+    --radius: 16px;
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Mantém 1rem = 10px de forma acessível */
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', sans-serif;
+}
+
+body {
+    background-color: var(--bg-gray);
+    color: var(--text-dark);
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 999; /* Aumentado para garantir que fique na frente de tudo */
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-shadow: 0 2px 10px rgba(0, 54, 136, 0.15);
+    border-bottom: 3px solid #4ade80;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    gap: 1.2rem;
+}
+
+.logo img {
+    height: 60px;
+    display: block;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.brand-title {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-icon {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
+    color: var(--main-color);
+}
+
+.nav-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* CORREÇÃO DO LINK DA HOME AQUI */
+.home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000; /* Força o link a ser clicável acima de qualquer outra div */
+}
+
+/* Evita que o elemento interno da imagem intercepte o clique do link pai */
+.home-link .nav-icon {
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS DA TELA DE LOGIN (JOEN)
+   ========================================================================== */
+
+/* Container que centraliza o card de login no meio da tela */
+.login-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 140px);
+    position: relative;
+    z-index: 1; /* Mantém o container em uma camada abaixo do header fixo */
+}
+
+/* O cartão do formulário */
+.login-card {
+    background-color: var(--bg-white);
+    border: 3px solid var(--main-color);
+    border-radius: var(--radius);
+    padding: 3.5rem;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 54, 136, 0.15);
+    transition: var(--transition);
+}
+
+.login-card:hover {
+    box-shadow: 0 12px 32px rgba(0, 54, 136, 0.25);
+}
+
+/* Cabeçalho interno do Card */
+.login-card-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.login-card-header .meta-tema {
+    font-size: 2.4rem;
+    color: var(--main-color);
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.login-card-header .chamada-acao {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Estrutura do Formulário e Inputs */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-label {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--main-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.login-form .search-input {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    background-color: var(--bg-gray);
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.login-form .search-input:focus {
+    border-color: var(--main-color);
+    background-color: var(--bg-white);
+    box-shadow: 0 0 0 4px rgba(8, 70, 161, 0.1);
+}
+
+/* Botão de Envio (Estilizado com o padrão de botões do jogo) */
+.login-form .sidebar-button {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--bg-white);
+    background-color: var(--green);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(13, 160, 57, 0.452);
+}
+
+.login-form .sidebar-button:hover {
+    background-color: var(--green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(13, 160, 57, 0.452);
+}
+
+.login-form .sidebar-button:active {
+    transform: translateY(0);
+}
+
+.login-card-footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    color: var(--text-muted);
+}
+
+.login-card-footer a {
+    font-family: 'Inter', sans-serif;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.login-card-footer a:hover {
+    color: var(--main-dark);
+    text-decoration: underline;
+}
+
+.main-footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+/* Responsividade Básica */
+@media (max-width: 1024px) {
+    .lab-workspace {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    body {
+        padding-top: 110px;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta Seletiva - JOEN</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    <link rel="stylesheet" href="../css/coletiva.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="#" class="brand">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="Logo JOEN">
+            </div>
+            <span class="brand-title">Jogos Educacionais Naturais</span>
+        </a>
+
+        <nav>
+            <div class="icons">
+                <img id="btn-user" class="nav-icon"
+                    src="https://img.icons8.com/material/40/003688/user-male-circle--v1.png" alt="Usuário" />
+
+                <a href="index.html" class="home-link">
+                    <img class="nav-icon" src="https://img.icons8.com/material-rounded/003688/40/home.png" alt="Home" />
+                </a>
+
+                <img id="btn-settings" class="nav-icon"
+                    src="https://img.icons8.com/material/40/003688/settings-3--v3.png" alt="Configurações" />
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <main class="left-content scrollable">
+            <div class="game-intro">
+                <h1 class="meta-tema">Missão: Separar e Reciclar </h1>
+                <p class="chamada-acao">Separe embalagens e resíduos nas lixeiras corretas para ajudar o meio ambiente!
+                </p>
+            </div>
+
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="header-problem">
+                        <span class="question-difficulty-badge difficulty-easy">Fácil</span>
+                        <span class="map-dimensions">Arraste para a lixeira correta</span>
+                    </div>
+
+                    <div class="problem-visual-area">
+                        <div id="trash-items" class="trash-items"></div>
+                    </div>
+
+                    <div class="bins-container">
+                        <div id="bin-papel" class="bin">
+                            <img src="../assets/elements/lixeira-papel.png" alt="Lixeira Azul">
+                        </div>
+                        <div id="bin-plastico" class="bin">
+                            <img src="../assets/elements/lixeira-plastico.png" alt="Lixeira Vermelha">
+                        </div>
+                        <div id="bin-vidro" class="bin">
+                            <img src="../assets/elements/lixeira-vidro.png" alt="Lixeira Verde">
+                        </div>
+                        <div id="bin-metal" class="bin">
+                            <img src="../assets/elements/lixeira-metal.png" alt="Lixeira Amarelo">
+                        </div>
+                        <div id="bin-organico" class="bin">
+                            <img src="../assets/elements/lixeira-organico.png" alt="Lixeira Marrom">
+                        </div>
+                        <div id="bin-naoreciclevel" class="bin">
+                            <img src="../assets/elements/caixa.png" alt="Lixeira Marrom">
+                        </div>
+                    </div>
+
+                    <div id="feedback-text" class="feedback-msg"></div>
+
+                    <button id="btn-confirm-game" class="play-button">Confirmar Coleta</button>
+                </div>
+            </div>
+
+            <div class="bottom-dashboard">
+                <div class="dashboard-col">
+                    <h3 class="dashboard-col-title">Dica:</h3>
+                    <p class="dashboard-text text-line-height">
+                        Cada tipo de resíduo tem uma lixeira específica:<br>
+                        <strong>Papel</strong> (azul), <strong>Plástico</strong> (vermelho), <strong>Vidro</strong>
+                        (verde), <strong>Metal</strong> (amarelo), <strong>Orgânico</strong> (marrom).
+                    </p>
+                </div>
+                <div class="dashboard-col">
+                    <h3 class="dashboard-col-title">Progresso</h3>
+                    <p class="dashboard-text">Itens corretos: <span id="score-count">0</span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        &copy; 2026 JOEN. Todos os direitos reservados.
+    </footer>
+    
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="../js/coletiva.js"></script>
+</body>
+
+</html>

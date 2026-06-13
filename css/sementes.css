@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@500;700;800&display=swap');
+
+:root {
+    --main-color: #003688;
+    --green: #6ee753;
+    --bg-white: #ffffff;
+    --bg-gray: #f1f5f9;
+    --bg-light-blue: #e0f2fe;
+    --text-dark: #0f172a;
+    --text-muted: #475569;
+    --border: #cbd5e1;
+    --radius: 16px;
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', sans-serif;
+}
+
+body {
+    background-color: var(--bg-gray);
+    color: var(--text-dark);
+    padding-top: 100px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 99;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-shadow: 0 2px 10px rgba(0, 54, 136, 0.15);
+    border-bottom: 3px solid var(--green);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    gap: 1.2rem;
+}
+
+.brand-title {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.logo img {
+    height: 50px;
+    display: block;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-icon {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: var(--transition);
+    display: block;
+}
+
+.nav-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    flex: 1;
+}
+
+.game-intro {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.meta-tema {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.chamada-acao {
+    font-size: 1.6rem;
+    color: var(--text-muted);
+}
+
+.instrucao-uso {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+.lab-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.lab-hud {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    color: var(--bg-white);
+    padding: 1.2rem 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0, 54, 136, 0.15);
+}
+
+.hud-item {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.hud-label {
+    color: var(--bg-light-blue);
+    margin-right: 0.5rem;
+}
+
+.lab-workspace {
+    display: grid;
+    grid-template-columns: 28rem 1fr 28rem;
+    gap: 2rem;
+    flex: 1;
+    min-height: 450px;
+}
+
+/* Estilização padrão para os três painéis laterais/centrais */
+.seed-card-panel, .greenhouse-panel, .tools-panel {
+    background-color: var(--bg-white);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.seed-card-panel h3, .greenhouse-panel h3, .tools-panel h3 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--bg-gray);
+    padding-bottom: 0.5rem;
+}
+
+.seed-preview-box {
+    height: 12rem;
+    background-color: var(--bg-gray);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border: 1px dashed var(--border);
+}
+
+.seed-sprite {
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.seed-details h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.seed-desc {
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.seed-traits {
+    list-style: none;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.greenhouse-screen-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* O Vaso individual */
+.pot-slot {
+    width: 100%;
+    max-width: 26rem;
+    background-color: var(--bg-gray);
+    border: 2px dashed var(--main-color);
+    border-radius: var(--radius);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    transition: var(--transition);
+}
+
+.pot-slot.drag-over {
+    background-color: var(--bg-light-blue);
+    border-style: solid;
+    transform: scale(1.02);
+}
+
+.pot-status {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.pot-visual {
+    width: 160px;       
+    height: 160px;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    background-color: rgba(0, 0, 0, 0.03); 
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#pot-img-state {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;   
+    image-rendering: crisp-edges; 
+}
+
+.pot-visual.murcha {
+    filter: grayscale(0.8) sepia(0.4) saturate(0.5);
+    transform: rotate(15deg) translateY(5px);
+    opacity: 0.7;
+}
+
+.pot-moisture-bar {
+    width: 100%;
+    height: 1.2rem;
+    background-color: var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.moisture-fill {
+    width: 0%; 
+    height: 100%;
+    background-color: #3b82f6; 
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.pot-timer {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    padding: 0.4rem 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+}
+
+.lab-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.9);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.lab-overlay h2 {
+    font-size: 2.8rem;
+    color: #ef4444;
+    margin-bottom: 1rem;
+}
+
+.lab-overlay p {
+    font-size: 1.5rem;
+    color: var(--bg-gray);
+    max-width: 40rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.lab-btn {
+    background-color: #ef4444;
+    color: var(--bg-white);
+    border: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: var(--radius);
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lab-btn:hover {
+    background-color: #dc2626;
+    transform: translateY(-2px);
+}
+
+.inventory-section {
+    margin-bottom: 2rem;
+}
+
+.inventory-section h4 {
+    font-size: 1.4rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.inventory-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.drag-item {
+    background-color: var(--bg-gray);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: grab;
+    user-select: none;
+    transition: var(--transition);
+}
+
+.drag-item:active {
+    cursor: grabbing;
+    transform: scale(0.98);
+}
+
+.drag-item:hover {
+    background-color: var(--bg-light-blue);
+    border-color: var(--main-color);
+}
+
+.tool-item img {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main-footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+    .lab-workspace {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    body {
+        padding-top: 110px;
+    }
+}

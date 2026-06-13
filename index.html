@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOEN | Jogos Educacionais Naturais</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="#" class="brand">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo JOEN">
+            </div>
+            <span class="brand-title">Jogos Educacionais Naturais</span>
+        </a>
+
+        <a href="sobre.html" class="menu-item-sobre">Sobre</a>
+
+        <div class="icons">
+            <form class="search-form" id="search-form">
+                <input type="text" name="q" id="search-input" placeholder="Pesquisar jogos..." class="search-input" />
+                <img src="https://img.icons8.com/ios-glyphs/30/003688/search--v1.png" alt="search-icon" class="search-icon" id="search-submit-icon" />
+            </form>
+
+            <a href="login.html" class="profile-link">
+                <img width="40" height="40" src="https://img.icons8.com/material/40/003688/user-male-circle--v1.png" alt="user-male-circle--v1" />
+            </a>
+
+            <img width="40" height="40" src="https://img.icons8.com/material/40/003688/settings-3--v3.png" alt="settings-3--v3" />
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+
+        <main class="left-content scrollable">
+            <h3 class="meta-tema">Explorar os jogos</h3>
+            <h4 class="chamada-acao">Aprenda Ciências, Agricultura e Sustentabilidade ao jogar:</h4>
+
+            <div class="games-grid" id="games-grid"></div>
+
+            <section class="bottom-dashboard">
+
+                <div class="dashboard-col student-progress-panel">
+                    <h3 class="dashboard-col-title">O Meu Progresso</h3>
+                    <div class="student-profile-header">
+                        <span class="student-level-badge" id="student-level">Nível 1</span>
+                        <h3 class="student-title" id="student-title">Iniciante Ecológico</h3>
+                    </div>
+
+                    <div class="xp-container">
+                        <div class="xp-text-wrapper">
+                            <span class="xp-label">Progresso de XP</span>
+                            <span class="xp-values" id="xp-display">0 / 1000 XP</span>
+                        </div>
+                        <div class="xp-bar-bg">
+                            <div class="xp-bar-fill" id="xp-bar-fill"></div>]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-col daily-tasks-panel">
+                    <h3 class="dashboard-col-title">Tarefas do Dia</h3>
+                    <div class="sidebar-list">
+                        <div class="task-item" id="item-task-reflorestar">
+                            <input type="checkbox" class="task-checkbox" id="task-reflorestar" disabled>
+                            <label for="task-reflorestar" class="task-text">Vença no Trator Reflorestador antes de 2 minutos.</label>
+                        </div>
+                        <div class="task-item" id="item-task-coleta">
+                            <input type="checkbox" class="task-checkbox" id="task-coleta" disabled>
+                            <label for="task-coleta" class="task-text">Separar 10 resíduos na Coleta Seletiva corretamente.</label>
+                        </div>
+                        <div class="task-item" id="item-task-hectare">
+                            <input type="checkbox" class="task-checkbox" id="task-hectare" disabled>
+                            <label for="task-hectare" class="task-text">Solucionar 5 contas no Mestre do Hectare</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-col records-panel">
+                    <h3 class="dashboard-col-title">Os Meus Recordes</h3>
+
+                    <div class="sidebar-list">
+                        <div class="record-item">
+                            <span class="record-game">Trator Reflorestador</span>
+                            <span class="record-score" id="record-trator-val">Nenhum</span>
+                        </div>
+
+                        <div class="record-item">
+                            <span class="record-game">Coleta Seletiva</span>
+                            <span class="record-score" id="record-coleta-val">Nenhum</span>
+                        </div>
+
+                        <div class="record-item">
+                            <span class="record-game">Mestre do Hectare</span>
+                            <span class="record-score" id="record-hectare-val">Nenhum</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <aside class="sidebar-right">
+            <section class="sidebar-section friends-section">
+                <h3 class="sidebar-title">Amigos Online</h3>
+
+                <div class="friends-list scrollable">
+                    <div class="friend-item">
+                        <span class="status-badge online"></span>
+                        <div>
+                            <p class="friend-name">Tiago Peres</p>
+                            <p class="friend-status">Jogando Mestre do Hectare</p>
+                        </div>
+                    </div>
+
+                    <div class="friend-item">
+                        <span class="status-badge online"></span>
+                        <div>
+                            <p class="friend-name">Ferdinando</p>
+                            <p class="friend-status">Jogando Coleta Seletiva</p>
+                        </div>
+                    </div>
+
+                    <div class="friend-item">
+                        <span class="status-badge online"></span>
+                        <div>
+                            <p class="friend-name">Elinda Mafra</p>
+                            <p class="friend-status">Online</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="sidebar-footer">
+                <button class="sidebar-button" id="btn-add-amigo">Adicionar Amigo</button>
+            </footer>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        &copy; 2026 JOEN. Todos os direitos reservados.
+    </footer>
+
+    <div id="modal-amigo" class="modal-container">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h2>Adicionar Amigo</h2>
+            
+            <div class="modal-body">
+                <label for="nickname-amigo">Digite o nickname do amigo:</label>
+                <input type="text" id="nickname-amigo" placeholder="Ex: Joao123" class="modal-input">
+                <button id="btn-confirmar-add" class="modal-btn-primary">Enviar Convite</button>
+                
+                <div class="divider">ou</div>
+                
+                <p>Compartilhe o link do JOEN:</p>
+                <button id="btn-copiar-link" class="modal-btn-secondary">Copiar Link do Jogo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

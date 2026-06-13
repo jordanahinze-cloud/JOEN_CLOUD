@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trator Reflorestador - JOEN</title>
+
+    <link class="nav-icon" rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link class="nav-icon" rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.ico">
+    <link class="nav-icon" rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="stylesheet" href="css/trator.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="#" class="brand">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo JOEN">
+            </div>
+            <span class="brand-title"> Jogos Educacionais Naturais</span>
+        </a>
+
+        <div class="icons">
+            <img id="btn-user" class="nav-icon" src="https://img.icons8.com/material/40/003688/user-male-circle--v1.png"
+                alt="user-male-circle--v1" />
+
+            <a href="index.html" class="home-link">
+                <img class="nav-icon" src="https://img.icons8.com/material-rounded/003688/40/home.png" alt="home" />
+            </a>
+
+            <img id="btn-settings" class="nav-icon" src="https://img.icons8.com/material/40/003688/settings-3--v3.png"
+                alt="settings-3--v3" />
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="left-content scrollable">
+            <div class="game-intro">
+                <h1 class="meta-tema">Missão: Reflorestamento</h1>
+                <p class="chamada-acao">Desvie dos obstáculos e cubra toda a área desmatada com árvores nativas!</p>
+                <p class="instrucoes">Controle: Pilote o trator ecológico usando as teclas W, A, S, D.</p>
+            </div>
+
+            <main class="game-container">
+
+                <section class="game-hud">
+                    <div class="hud-item">
+                        <span class="hud-label">Reflorestado:</span>
+                        <span id="progress-percentage">0</span>%
+                    </div>
+                    <div class="hud-item">
+                        <span class="hud-label">Árvores Plantadas:</span>
+                        <span id="score-trees">0</span>
+                    </div>
+                    <div class="hud-item">
+                        <span class="hud-label">Tempo Recorde:</span>
+                        <span id="record-time" class="hud-highlight">Carregando...</span>
+                    </div>
+                </section>
+
+                <section class="game-screen">
+                    <canvas id="gameCanvas" width="800" height="480"></canvas>
+
+                    <div id="start-screen" class="screen-overlay">
+                        <button id="btn-start" class="game-btn">Iniciar Missão</button>
+                    </div>
+
+                    <div id="victory-screen" class="screen-overlay hidden">
+                        <h2>Parabéns pela Área Recuperada!</h2>
+                        <p>Você atingiu 100% de reflorestamento nesta área desmatada.</p>
+                       <p id="record-message" class="record-message"></p>
+                        <button id="btn-restart" class="game-btn">Jogar Novamente</button>
+                    </div>
+                </section>
+            </main>
+
+        </div>
+    </div>
+    <footer class="main-footer">
+        &copy; 2026 JOEN. Todos os direitos reservados.
+    </footer>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="js/trator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - JOEN</title>
+
+    <link class="nav-icon" rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+    <link class="nav-icon" rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon.ico">
+    <link class="nav-icon" rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    
+    <link rel="stylesheet" href="../css/login.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="#" class="brand">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="Logo JOEN">
+            </div>
+            <span class="brand-title">Jogos Educacionais Naturais</span>
+        </a>
+
+        <div class="icons">
+            <img id="btn-user" class="nav-icon" src="https://img.icons8.com/material/40/003688/user-male-circle--v1.png" alt="user-male-circle--v1" />
+
+            <a href="index.html" class="home-link">
+                <img class="nav-icon" src="https://img.icons8.com/material-rounded/003688/40/home.png" alt="home" />
+            </a>
+
+            <img id="btn-settings" class="nav-icon" src="https://img.icons8.com/material/40/003688/settings-3--v3.png" alt="settings-3--v3" />
+        </div>
+    </header>
+
+    <main class="login-main-container">
+        <div class="login-card">
+            <div class="login-card-header">
+                <h3 class="meta-tema">Entrar no JOEN</h3>
+                <h4 class="chamada-acao">Acesse sua conta para salvar seu progresso e recordes!</h4>
+            </div>
+
+            <form id="game-login-form" class="login-form">
+                <div class="form-group">
+                    <label for="login-email" class="form-label">E-mail ou Usuário</label>
+                    <input type="email" id="login-email" placeholder="Digite seu e-mail..." class="search-input" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password" class="form-label">Senha</label>
+                    <input type="password" id="login-password" placeholder="Digite sua senha..." class="search-input" required />
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="sidebar-button">Entrar</button>
+                </div>
+            </form>
+
+            <div class="login-card-footer">
+                <p>Não tem uma conta? <a href="#" id="open-register">Cadastre-se</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        &copy; 2026 JOEN. Todos os direitos reservados.
+    </footer>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
+
