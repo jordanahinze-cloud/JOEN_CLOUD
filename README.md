@@ -1,8 +1,8 @@
-INTRODUÇÃO 
+# JOEN - Jogos Educacionais Naturais 
 
-A JOEN - Jogos Educacionais Naturais é uma plataforma de videogames educativos desenvolvida para aproximar os jogadores do campo. O projeto transforma o aprendizado sobre agricultura em uma jornada envolvente. Unindo programação, tecnologia e educação para mostrar como a inovação digital pode apoiar o desenvolvimento agrícola. 
+Uma plataforma de videogames educativos desenvolvida para aproximar os jogadores do campo. O projeto transforma o aprendizado sobre agricultura em uma jornada envolvente. Unindo programação, tecnologia e educação para mostrar como a inovação digital pode apoiar o desenvolvimento agrícola. 
 
-OBJETIVO 
+## OBJETIVO 
 
 O projeto nasceu com a missão de conectar os usuários ao universo do trabalho agrícola. Os jogos desafiam os estudantes a enfrentarem desafios baseados no trabalho dos produtores rurais:
 
@@ -14,7 +14,7 @@ Coleta Seletiva: o jogador deve separar corretamente embalagens e resíduos nas 
 
 Lab de Sementes: um jogo em que o jogador trabalha como um pesquisador em um laboratório agrícola, plantando e regando sementes de acordo com suas características específicas. Cada tipo de semente precisa de condições diferentes, como quantidade de água, luz e tempo de crescimento, e o desafio é seguir corretamente essas exigências para garantir um desenvolvimento saudável. O jogo ensina noções de biologia, cuidado com plantas e a importância das condições ambientais no crescimento das culturas.
 
-CONCLUSÃO 
+## CONCLUSÃO 
 
 O resultado final é inspirar as futuras gerações a valorizarem o campo, provando que a tecnologia e a programação são ferramentas fundamentais para construir um futuro mais verde e equilibrado. 
 
@@ -26,4 +26,4 @@ CSS: Gemini
 JavaScript: Gemini
 Elementos: piskel. 
 
-O site foi desenvolvido para projeto Agrinho 2026, na categoria programação, disponível em: https://jordanahinze-cloud.github.io/JOEN_CLOUD/
+O site foi desenvolvido para o curso Agrinho 2026, na categoria programação, disponível em: https://jordanahinze-cloud.github.io/JOEN_CLOUD/
